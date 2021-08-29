@@ -41,11 +41,11 @@ class ColumnFlowLayout: UICollectionViewFlowLayout {
         for update in updateItems {
             switch update.updateAction {
             case .delete:
-                /// indexPath에 해당하는 item이 삭제되기 전에 insertingIndexPaths에 삽입: 삭제전 후 finalLayoutAttributesForDisappearingItem(at:)호출되기 위함
+                /// indexPath에 해당하는 item이 삭제되기 전에 deletingIndexPaths에 삽입
                 guard let indexPath = update.indexPathBeforeUpdate else { return }
                 deletingIndexPaths.append(indexPath)
             case .insert:
-                /// indexPath에 해당하는 item이 추가된 다음 insertingIndexPaths에 삽입: 삽입된 후 initialLayoutAttributesForAppearingItem(at:)호출되기 위함
+                /// indexPath에 해당하는 item이 추가된 다음 insertingIndexPaths에 삽입
                 guard let indexPath = update.indexPathAfterUpdate else { return }
                 insertingIndexPaths.append(indexPath)
             default:
@@ -53,7 +53,7 @@ class ColumnFlowLayout: UICollectionViewFlowLayout {
             }
         }
     }
-
+    
     // MARK: attributes (삭제, 삽입)
 
     // 삭제 시 적용 애니메이션
