@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E010FEEF26DD2FF0006E8658 /* MosaicLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E010FEEE26DD2FF0006E8658 /* MosaicLayout.swift */; };
+		E010FEF126DD32B4006E8658 /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = E010FEF026DD32B4006E8658 /* CGRect.swift */; };
+		E010FEF526DD3A8B006E8658 /* ComplexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E010FEF426DD3A8B006E8658 /* ComplexViewController.swift */; };
+		E010FEF726DD3BAD006E8658 /* ComplexViewHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E010FEF626DD3BAD006E8658 /* ComplexViewHolder.swift */; };
+		E010FEFB26DD3C61006E8658 /* ComplexCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E010FEFA26DD3C61006E8658 /* ComplexCell.swift */; };
+		E010FEFD26DD3C8C006E8658 /* ComplexCellHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E010FEFC26DD3C8C006E8658 /* ComplexCellHolder.swift */; };
+		E010FEFF26DD3E48006E8658 /* Complex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E010FEFE26DD3E48006E8658 /* Complex.swift */; };
 		E0959DC126DA6D1000C11AAB /* AvartarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0959DC026DA6D1000C11AAB /* AvartarView.swift */; };
 		E0D4869D26D8B86B00F9160F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D4869C26D8B86B00F9160F /* AppDelegate.swift */; };
 		E0D4869F26D8B86B00F9160F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D4869E26D8B86B00F9160F /* SceneDelegate.swift */; };
@@ -26,6 +33,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E010FEEE26DD2FF0006E8658 /* MosaicLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaicLayout.swift; sourceTree = "<group>"; };
+		E010FEF026DD32B4006E8658 /* CGRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
+		E010FEF426DD3A8B006E8658 /* ComplexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexViewController.swift; sourceTree = "<group>"; };
+		E010FEF626DD3BAD006E8658 /* ComplexViewHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexViewHolder.swift; sourceTree = "<group>"; };
+		E010FEFA26DD3C61006E8658 /* ComplexCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexCell.swift; sourceTree = "<group>"; };
+		E010FEFC26DD3C8C006E8658 /* ComplexCellHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexCellHolder.swift; sourceTree = "<group>"; };
+		E010FEFE26DD3E48006E8658 /* Complex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Complex.swift; sourceTree = "<group>"; };
 		E0959DC026DA6D1000C11AAB /* AvartarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvartarView.swift; sourceTree = "<group>"; };
 		E0D4869926D8B86B00F9160F /* CollectionViewEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewEx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0D4869C26D8B86B00F9160F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +71,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E010FEF226DD3A5F006E8658 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				E0D486A026D8B86B00F9160F /* FriendsViewController.swift */,
+				E0EDAD2F26DB33A400015F22 /* FriendsViewHolder.swift */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		E010FEF326DD3A80006E8658 /* Mosaic */ = {
+			isa = PBXGroup;
+			children = (
+				E010FEF426DD3A8B006E8658 /* ComplexViewController.swift */,
+				E010FEF626DD3BAD006E8658 /* ComplexViewHolder.swift */,
+			);
+			path = Mosaic;
+			sourceTree = "<group>";
+		};
+		E010FEF826DD3BE2006E8658 /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				E0FB0CB226D9193000B99299 /* PersonCell.swift */,
+				E0EDAD2D26DB299500015F22 /* PersonCellHolder.swift */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
+		E010FEF926DD3BE8006E8658 /* Complex */ = {
+			isa = PBXGroup;
+			children = (
+				E010FEFA26DD3C61006E8658 /* ComplexCell.swift */,
+				E010FEFC26DD3C8C006E8658 /* ComplexCellHolder.swift */,
+			);
+			path = Complex;
+			sourceTree = "<group>";
+		};
 		E0D4869026D8B86B00F9160F = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				E0D486BA26D8F46000F9160F /* ColumnFlowLayout.swift */,
+				E010FEEE26DD2FF0006E8658 /* MosaicLayout.swift */,
 			);
 			path = Layouts;
 			sourceTree = "<group>";
@@ -118,8 +169,8 @@
 		E0D486B526D8F3CF00F9160F /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				E0FB0CB226D9193000B99299 /* PersonCell.swift */,
-				E0EDAD2D26DB299500015F22 /* PersonCellHolder.swift */,
+				E010FEF926DD3BE8006E8658 /* Complex */,
+				E010FEF826DD3BE2006E8658 /* Person */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -136,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				E0FB0CBA26D91B2300B99299 /* Person.swift */,
+				E010FEFE26DD3E48006E8658 /* Complex.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -152,8 +204,8 @@
 		E0EDAD2C26DB25F200015F22 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				E0D486A026D8B86B00F9160F /* FriendsViewController.swift */,
-				E0EDAD2F26DB33A400015F22 /* FriendsViewHolder.swift */,
+				E010FEF326DD3A80006E8658 /* Mosaic */,
+				E010FEF226DD3A5F006E8658 /* Friends */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -163,6 +215,7 @@
 			children = (
 				E0FB0CB526D919B000B99299 /* NSObject.swift */,
 				E0FB0CBC26D91D9000B99299 /* Mock.swift */,
+				E010FEF026DD32B4006E8658 /* CGRect.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -251,19 +304,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E010FEF526DD3A8B006E8658 /* ComplexViewController.swift in Sources */,
 				E0959DC126DA6D1000C11AAB /* AvartarView.swift in Sources */,
 				E0EDAD5C26DB594700015F22 /* CollectionViewUpdateState.swift in Sources */,
 				E0D486A126D8B86B00F9160F /* FriendsViewController.swift in Sources */,
 				E0FB0CB926D91AC500B99299 /* BaseCollectionViewCell.swift in Sources */,
 				E0FB0CB326D9193000B99299 /* PersonCell.swift in Sources */,
+				E010FEFB26DD3C61006E8658 /* ComplexCell.swift in Sources */,
 				E0EDAD2E26DB299500015F22 /* PersonCellHolder.swift in Sources */,
+				E010FEFF26DD3E48006E8658 /* Complex.swift in Sources */,
 				E0D486BB26D8F46000F9160F /* ColumnFlowLayout.swift in Sources */,
+				E010FEF126DD32B4006E8658 /* CGRect.swift in Sources */,
 				E0FB0CBB26D91B2300B99299 /* Person.swift in Sources */,
 				E0FB0CB626D919B000B99299 /* NSObject.swift in Sources */,
+				E010FEEF26DD2FF0006E8658 /* MosaicLayout.swift in Sources */,
 				E0D4869D26D8B86B00F9160F /* AppDelegate.swift in Sources */,
 				E0D4869F26D8B86B00F9160F /* SceneDelegate.swift in Sources */,
 				E0EDAD3026DB33A400015F22 /* FriendsViewHolder.swift in Sources */,
+				E010FEF726DD3BAD006E8658 /* ComplexViewHolder.swift in Sources */,
 				E0FB0CBD26D91D9000B99299 /* Mock.swift in Sources */,
+				E010FEFD26DD3C8C006E8658 /* ComplexCellHolder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

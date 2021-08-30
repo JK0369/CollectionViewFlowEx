@@ -53,7 +53,7 @@ class ColumnFlowLayout: UICollectionViewFlowLayout {
             }
         }
     }
-    
+
     // MARK: attributes (삭제, 삽입)
 
     // 삭제 시 적용 애니메이션

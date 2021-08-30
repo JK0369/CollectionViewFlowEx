@@ -101,4 +101,9 @@ extension FriendsViewController: UICollectionViewDataSource, UICollectionViewDel
         cell.model = peopleDataSource[indexPath.item]
         return cell
     }
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let complexViewController = ComplexViewConroller()
+        navigationController?.pushViewController(complexViewController, animated: true)
+    }
 }
